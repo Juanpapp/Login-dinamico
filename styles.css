@@ -137,6 +137,39 @@ body {
     position: absolute;
     transform: translatey(-300%);
 }
+
+/* personalizacion de mis alestas y mensajes */
+.form div .alerta {
+    width: 290px;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+.form > .alerta-error, .alerta-exito {
+    display: none;
+}
+.form .alertaError {
+    display: block;
+    background-color: #f66060;
+    padding: 5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.form .alertaExito {
+    display: block;
+    background-color: #0ca828;
+    padding: 5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.from .error {
+    outline: solid 2px #9d2222;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 750px) {
     html {
@@ -145,7 +178,7 @@ body {
 }
 @media screen and (max-width: 580px) {
     html {
-        font-size: 10px;
+        font-size: 15px;
     }
     .container-form {
         flex-direction: column;

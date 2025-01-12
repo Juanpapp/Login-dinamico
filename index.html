@@ -28,25 +28,36 @@
                     <i class='bx bxl-linkedin'></i>
                 </div>
                 <p>o usa tu email para registrarte</p>
-                <form class="form" id="form-login">
-                    <label>
-                        <i class='bx bx-user'></i>
-                        <input type="text" name="name" placeholder="Nombre">
-                    </label>
-                    <label>
-                        <i class='bx bx-envelope' ></i>
-                        <input type="email" name="email" placeholder="Email">
-                    </label>
-                    <label>
-                        <i class='bx bx-lock-alt' ></i>
-                        <input type="password" name="password" placeholder="Contraseña">
-                    </label>
+                <form class="form form-register" id="form-login" novalidate >
+                    <div>
+                        <label>
+                            <i class='bx bx-user'></i>
+                            <input type="text" name="userNamer" placeholder="Nombre Usuario">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" name="userEmail" placeholder="Email">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" name="userPassword" placeholder="Contraseña">
+                        </label>
+                    </div> 
                     <input type="submit" value="Registarse" class="btn">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Iniciaste seccion correctamente</div>
                 </form>
             </div>
         </div>
 
     </div>
+
+
+
 
     <div class="container-form login hide">
         <div class="information">
@@ -65,16 +76,22 @@
                     <i class='bx bxl-linkedin'></i>
                 </div>
                 <p>Inicia Seccion con una cuenta</p>
-                <form class="form" id="form-login">
-                    <label>
-                        <i class='bx bx-envelope' ></i>
-                        <input type="email" name="email" placeholder="Email">
-                    </label>
-                    <label>
-                        <i class='bx bx-lock-alt' ></i>
-                        <input type="password" name="password" placeholder="Contraseña">
-                    </label>
+                <form class="form form-login" id="form-login" novalidate >
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope' ></i>
+                            <input type="email" name="userEmail" placeholder="Email">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt' ></i>
+                            <input type="password" name="userPassword" placeholder="Contraseña">
+                        </label>
+                    </div>
                     <input type="submit" value="Iniciar Seccion" class="btn">
+                    <div class="alerta-error">Todos los campos son obligatorios</div>
+                    <div class="alerta-exito">Iniciaste seccion correctamente</div>
                 </form>
             </div>
         </div>
