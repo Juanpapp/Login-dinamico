@@ -17,8 +17,8 @@ export const estadoValidacionCampos = {
 
 document.addEventListener("DOMContentLoaded", () => {
   formRegister.addEventListener("submit", (e) => {
-    e.preventDefault();
-    enviarFormulario(formRegister,alertaError,alertaExito);
+    //e.preventDefault();
+    enviarFormulario(formRegister,alertaError,alertaExito,e);
   });
 
   inputUser.addEventListener("input", () => {
@@ -61,7 +61,7 @@ function eliminarAlerta(referencia) {
   if (alerta) alerta.remove();
 }
 
-export function enviarFormulario(form, alertaError,alertaExito) {
+export function enviarFormulario(form, alertaError,alertaExito, e) {
   //VALIDAMOS EL ENVIO DE NUESTRO FORMULARIO
 
   if (estadoValidacionCampos.userName && estadoValidacionCampos.userEmail && estadoValidacionCampos.userPassword) {
@@ -70,7 +70,7 @@ export function enviarFormulario(form, alertaError,alertaExito) {
     estadoValidacionCampos.userEmail = false;
     estadoValidacionCampos.userPassword = false;
 
-    form.reset();
+    //form.reset();
     alertaExito.classList.add("alertaExito");
     alertaError.classList.remove("alertaError");
     setTimeout(() => {
@@ -78,7 +78,7 @@ export function enviarFormulario(form, alertaError,alertaExito) {
     }, 3000); 
     return;
   }
-  
+  e.preventDefault();
   alertaExito.classList.remove("alertaExito");
   alertaError.classList.add("alertaError");
   setTimeout(() => {

@@ -29,7 +29,7 @@
                     <i class='bx bxl-linkedin' ></i>
                 </div>
                 <p>o usa tu email para registrarte</p>
-                <form class="form form-register" novalidate>
+                <form action="php/register_db.php" method="POST" class="form form-register" novalidate>
                     <div>
                         <label>
                             <i class='bx bx-user' ></i>
@@ -75,7 +75,7 @@
                     <i class='bx bxl-linkedin' ></i>
                 </div>
                 <p>o Iniciar Sesión con una cuenta</p>
-                <form class="form form-login" novalidate>
+                <form action="login_db.php" method="POST" class="form form-login" novalidate>
                     <div>
                         <label >
                             <i class='bx bx-envelope' ></i>
